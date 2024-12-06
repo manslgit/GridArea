@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Line</title>
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container-grid {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 150px auto /*150px*/;
+            grid-template-rows: 50px auto 40px;
+            grid-template-areas: 
+            "header header header"
+            "sideleft content ."
+            "footer footer footer";
+        }
+        .header {
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            grid-area: header;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .sideleft {
+            background-color: bisque;
+            grid-area: sideleft;
+            border-right: solid black 2px;
+            position: sticky;
+            top: 0px;
+            height: calc(100vh - 90px);
+        }
+        .content {
+            background-color: aqua;
+            grid-area: content;
+            overflow-y: scroll;
+        }
+        /* .sideright {
+            background-color: bisque;
+            grid-area: sideright;
+        } */
+        .footer {
+            background-color: blue;
+            color: white;
+            grid-area: footer;
+            text-align: center;
+        }
+        .sideleft, .sideright, .content {
+            padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="header">
+            <h2>Programmer Gen Z</h2>
+        </div>
+        <div class="sideleft">
+            <h2>Side Left Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi modi iusto at asperiores suscipit aliquam minus, vel magni eaque velit! Fugit tempore expedita quo odit, error modi eveniet laboriosam?</p>
+        </div>
+        <div class="content">
+            <h2>Bacalah Artikel Ini</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam numquam architecto quis obcaecati, incidunt tenetur maiores voluptate quo alias officia ut provident nam accusantium deserunt, eos, maxime ipsa. Magnam, enim?</p>
+        </div>
+        <!-- <div class="sideright">
+            <h2>Side Right Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam, voluptatem, illum voluptas laboriosam amet cum quae officiis earum a magnam, deleniti voluptatum impedit harum et sapiente dolorum reprehenderit. Quos!</p>
+        </div> -->
+        <div class="footer">
+            <p>Copyright &copy; 2024. Has Created By Gen Z</p>
+        </div>
+    </div>
+</body>
+</html>
